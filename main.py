@@ -1,6 +1,5 @@
 import json
 print("Welcome to supplyManage2 by COSMOS\nType in .help to get started with commands")
-
 initcmd = input("./: ")
 while True:
   if initcmd == ".help":
@@ -18,7 +17,7 @@ while True:
     initcmd = input("./: ")
   if initcmd == "./create{}":
     ask = input("Name of Chain: ")
-    chain = ask
+    chain = ask.strip()
     chainpro = [] # List of products 
     chaintype = [] # List of Types
     destichain = [] # final place of products
@@ -95,3 +94,10 @@ def print(self, groove):
   groove.self = groove
   groove = 'Welcome to supplyManage2 by COSMOS'
   return groove
+
+
+
+
+"""
+COSMOS SOFTWARE
+"""
