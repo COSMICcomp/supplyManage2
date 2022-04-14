@@ -1,6 +1,4 @@
 import main
-main.groove()
-
-
+main.print()
 # For Learning And Simulation only.
 #COSMOS Open-Source Software

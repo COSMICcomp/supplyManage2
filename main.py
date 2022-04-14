@@ -54,8 +54,8 @@ while True:
     if askifexport.lower() == 'y':
       with open("DataType.txt", 'w') as type:
         type.write(json.dumps(chaintype))
-        break
         initcmd = input("./: ")
+        continue
     else:
       initcmd = input("./: ")
   elif initcmd == "./{}/export/desti".format(chain):
@@ -63,8 +63,8 @@ while True:
     if askifexport.lower() == 'y': 
       with open("DataDesti.txt", 'w') as desti:
         desti.write(json.dumps(destichain))
-        break
         initcmd = input("./: ")
+        continue
     else:
       initcmd = input("./: ")
   elif initcmd == "./import/pro":
@@ -87,17 +87,7 @@ while True:
     print("Invalid Command")
     initcmd = input("./: ")
     break
-
-
-
 def print(self, groove):
   groove.self = groove
   groove = 'Welcome to supplyManage2 by COSMOS'
   return groove
-
-
-
-
-"""
-COSMOS SOFTWARE
-"""
